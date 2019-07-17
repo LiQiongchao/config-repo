@@ -8,17 +8,6 @@ spring:
     username: root
     password: root
 
-  application:
-    name: sell-order
-  main:
-    allow-bean-definition-overriding: true
-eureka:
-  instance:
-    hostname: 127.0.0.1
-  client:
-    service-url:
-      defaultZone: http://139.224.232.41:8050/eureka/
-
 server:
   port: 8081
 
