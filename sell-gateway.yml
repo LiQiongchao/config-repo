@@ -9,8 +9,8 @@ zuul:
       # config transfer cookie at request
       sensitiveHeaders: 
 
-  ignored-patterns:
-      - /**/list
+  # ignored-patterns:
+      # - /**/list
 management:
   endpoints:
     web:
