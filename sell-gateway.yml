@@ -1,2 +1,19 @@
 server:
   port: 8083
+
+zuul:
+  routes:
+    myProduct:
+      path: /product/**
+      serviceId: sell-product
+      # config transfer cookie at request
+      sensitiveHeaders: 
+
+  ignored-patterns:
+      - /**/list
+management:
+  endpoints:
+    web:
+      exposure:
+#        include: "routes,mappers"
+        include: "*"
